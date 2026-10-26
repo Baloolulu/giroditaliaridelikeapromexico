@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registro · Giro México 2026 | Gran Fondo en CDMX</title>
+<meta name="description" content="Regístrate al Giro México 2026: gran fondo en CDMX el 24 de noviembre. Distancias de 60 a 140 km, kit de corredor y comunidad. Resuelve tus dudas y asegura tu lugar.">
+<meta name="theme-color" content="#e4007c">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Registro · Giro México 2026">
+<meta property="og:description" content="Gran fondo en CDMX el 24 de noviembre. Elige tu reto y asegura tu lugar.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--pink:#e4007c;--pink-dark:#b00060;--pink-text:#c2006a;--pink-light:#ff5fae;--ink:#0b0b0c;--muted:#45454b;--line:#2a2a2d;--soft:#f6f2f4}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+  a{color:var(--pink)}a:hover{color:var(--pink-dark)}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+  .display{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95;margin:0}
+  .eyebrow{margin:0;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-text)}
+  .dark .eyebrow{color:var(--pink-light)}
+  .lead{margin:0;font-size:18px;line-height:1.6;color:var(--muted)}
+  .dark{background:var(--ink);color:#fff}
+  section .wrap{padding-top:96px;padding-bottom:96px}
+  .head{display:flex;flex-direction:column;gap:14px;max-width:760px}
+  h2.display{font-size:clamp(40px,6vw,72px)}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;padding:16px 26px;min-height:52px;transition:background .15s}
+  .btn:hover{background:var(--pink-dark);color:#fff}
+  .btn-lg{font-size:18px;padding:18px 30px;min-height:58px}
+  .btn-ghost{display:inline-flex;align-items:center;border:2px solid #fff;color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:16px 28px;min-height:58px}
+  .btn-ghost:hover{background:#fff;color:var(--ink)}
+  :focus-visible{outline:3px solid var(--pink-light);outline-offset:3px}
+
+  /* Header */
+  header{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #262628}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .logo{color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+  .logo:hover{color:#fff}
+  .logo i{display:inline-block;width:14px;height:28px;background:var(--pink);transform:skewX(-14deg)}
+  .logo span{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;letter-spacing:.02em;text-transform:uppercase}
+  .logo b{color:var(--pink-light);font-weight:800}
+  nav{display:flex;gap:22px;align-items:center;font-size:15px;font-weight:500}
+  nav a.link{color:#d9d9dc;text-decoration:none}
+  nav a.link:hover{color:#fff}
+  nav .btn{padding:12px 20px;min-height:44px}
+  @media (max-width:720px){nav a.link{display:none}}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden}
+  .hero .slab{position:absolute;top:-40px;height:900px;background:var(--pink);transform:skewX(-14deg)}
+  .hero .slab.a{right:-120px;width:520px}
+  .hero .slab.b{right:440px;width:40px}
+  @media (max-width:900px){.hero .slab.a{right:-360px;opacity:.9}.hero .slab.b{display:none}}
+  .hero .wrap{position:relative;display:flex;flex-direction:column;gap:28px;padding-top:96px;padding-bottom:88px}
+  .badge{margin:0;align-self:flex-start;background:#fff;color:var(--ink);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
+  .hero h1{font-size:clamp(56px,11vw,148px);line-height:.88;max-width:900px;letter-spacing:-.01em}
+  .hero p.sub{margin:0;font-size:clamp(18px,2.2vw,22px);line-height:1.5;max-width:620px;color:#e6e6e8}
+  .row{display:flex;gap:14px;flex-wrap:wrap}
+  .note{margin:0;font-size:14px;color:#bdbdc2}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;margin-top:24px;background:var(--line);border:2px solid var(--line);max-width:980px}
+  .facts div{background:var(--ink);padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+  .facts small{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:#bdbdc2}
+  .facts strong{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px}
+  .facts .pink{color:var(--pink-light)}
+
+  /* Pasos */
+  .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .steps li{border:2px solid var(--ink);padding:28px;display:flex;flex-direction:column;gap:12px}
+  .steps li.inv{background:var(--ink);color:#fff}
+  .steps .n{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:64px;line-height:1;color:var(--pink)}
+  .steps li.inv .n{color:var(--pink-light)}
+  .steps h3{margin:0;font-size:22px}
+  .steps p{margin:0;font-size:16px;line-height:1.6;color:var(--muted)}
+  .steps li.inv p{color:#d9d9dc}
+  .tip{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:#fdf0f6;padding:22px 24px}
+  .tip p{margin:0;font-size:16px;line-height:1.5;flex:1 1 320px}
+
+  /* Motivos */
+  .reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;background:var(--line);border:2px solid var(--line)}
+  .reasons div{background:var(--ink);padding:32px 28px;display:flex;flex-direction:column;gap:12px}
+  .reasons h3{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;text-transform:uppercase}
+  .reasons p{margin:0;font-size:16px;line-height:1.6;color:#d9d9dc}
+
+  /* Distancias */
+  .dist{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .dist article{border:2px solid var(--ink);padding:28px;display:flex;flex-direction:column;gap:14px;min-height:280px}
+  .dist .km{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:72px;line-height:.9}
+  .dist .tag{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pink-text)}
+  .dist p{margin:0;font-size:16px;line-height:1.6;color:var(--muted);flex:1 1 auto}
+  .dist a{color:var(--ink);font-weight:700;text-decoration:none;border-bottom:2px solid var(--pink);align-self:flex-start;padding:10px 0}
+  .dist a:hover{color:var(--pink-text)}
+
+  /* Kit */
+  .kit .wrap{display:flex;gap:48px;flex-wrap:wrap;align-items:flex-start}
+  .kit .head{flex:1 1 380px}
+  .kit ul{flex:1 1 420px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .kit li{background:#fff;padding:18px 20px;display:flex;gap:12px;align-items:center;font-size:16px;font-weight:600}
+
+  /* Clubes */
+  .clubs{background:var(--pink);color:#fff}
+  .clubs .wrap{display:flex;gap:32px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:72px;padding-bottom:72px}
+  .clubs .txt{flex:1 1 520px;display:flex;flex-direction:column;gap:12px}
+  .clubs h2{font-size:clamp(36px,5vw,60px)}
+  .clubs p{margin:0;font-size:18px;line-height:1.6}
+  .clubs a.mail{background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:18px 28px;min-height:56px;display:inline-flex;align-items:center;word-break:break-all}
+  .clubs a.mail:hover{background:#262628}
+
+  /* FAQ */
+  .faq .wrap{display:flex;gap:48px;flex-wrap:wrap;align-items:flex-start}
+  .faq .head{flex:1 1 320px}
+  .faq .list{flex:2 1 560px;min-width:0;border-top:2px solid var(--ink)}
+  details{border-bottom:2px solid var(--ink)}
+  summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 4px;min-height:64px;font-size:19px;font-weight:700}
+  summary::-webkit-details-marker{display:none}
+  summary:hover{background:var(--soft)}
+  summary .sign{font-family:'Barlow Condensed',sans-serif;font-size:34px;line-height:1;color:var(--pink);width:24px;text-align:center;flex:0 0 auto}
+  summary .sign::before{content:'+'}
+  details[open] summary .sign::before{content:'–'}
+  details p{margin:0;padding:0 4px 24px;font-size:17px;line-height:1.65;color:var(--muted);max-width:720px}
+
+  /* Cierre */
+  .final{position:relative;overflow:hidden}
+  .final .slab{position:absolute;left:-160px;bottom:-60px;width:420px;height:700px;background:var(--pink);transform:skewX(-14deg)}
+  .final .wrap{position:relative;display:flex;flex-direction:column;gap:26px;align-items:flex-end;text-align:right;padding-top:112px;padding-bottom:112px}
+  .final h2{font-size:clamp(48px,9vw,120px);line-height:.88;max-width:900px}
+  .final p{margin:0;font-size:19px;line-height:1.6;max-width:560px;color:#e6e6e8}
+  .final .btn{font-size:20px;padding:20px 34px;min-height:60px}
+  @media (max-width:720px){.final .slab{left:-340px}}
+
+  footer{background:var(--ink);color:#bdbdc2;border-top:1px solid #262628}
+  footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between;font-size:14px;padding-top:32px;padding-bottom:32px}
+  footer a{color:#d9d9dc}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio"><i aria-hidden="true"></i><span>Giro México <b>2026</b></span></a>
+    <nav aria-label="Secciones">
+      <a class="link" href="#como">Cómo registrarte</a>
+      <a class="link" href="#distancias">Distancias</a>
+      <a class="link" href="#dudas">Dudas</a>
+      <a class="btn" data-registro href="#" target="_blank" rel="noopener">Registrarme</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero dark">
+    <div class="slab a" aria-hidden="true"></div>
+    <div class="slab b" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="badge">Registro abierto · Cupo limitado</p>
+      <h1 class="display">Rueda como pro.<br>Asegura tu lugar.</h1>
+      <p class="sub">Giro México 2026 trae el espíritu gran fondo a la CDMX: entrenas, llegas con tu bloque y cruzas una meta con jersey, medalla y comunidad. Tu registro se completa en un par de minutos.</p>
+      <div class="row">
+        <a class="btn btn-lg" data-registro href="#" target="_blank" rel="noopener">Quiero registrarme
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+        <a class="btn-ghost" href="#dudas">Tengo dudas</a>
+      </div>
+      <p class="note">Al dar clic se abre la plataforma oficial de registro en una pestaña nueva.</p>
+      <div class="facts">
+        <div><small>Fecha</small><strong>24 nov 2026</strong></div>
+        <div><small>Sede</small><strong>Roma Norte, CDMX</strong></div>
+        <div><small>Distancias</small><strong>60 a 140 km</strong></div>
+        <div><small>Faltan</small><strong class="pink" id="cuenta">—</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:44px">
+      <div class="head">
+        <p class="eyebrow">Cómo registrarte</p>
+        <h2 class="display">Tres pasos y estás en la salida.</h2>
+        <p class="lead">El registro y la confirmación de tu lugar se hacen en la plataforma oficial del evento. Aquí te contamos todo lo que necesitas antes de dar el clic.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="n">01</span><h3>Elige tu reto</h3><p>60, 100 o 140 km, o el gran fondo completo. Si aún no decides, revisa las distancias más abajo.</p></li>
+        <li><span class="n">02</span><h3>Regístrate en la plataforma oficial</h3><p>Da clic en «Quiero registrarme». Se abre la página de registro, donde capturas tus datos, nivel y talla de jersey.</p></li>
+        <li class="inv"><span class="n">03</span><h3>Confirma y prepárate</h3><p>Recibes tu confirmación y, conforme se acerque la fecha, los detalles de ruta y entrega de kit. A entrenar.</p></li>
+      </ol>
+      <div class="tip">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c2006a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+        <p>Ten a la mano: nombre completo, correo, WhatsApp, ciudad, tu nivel ciclista y tu talla de jersey (XS a XXL).</p>
+        <a class="btn" data-registro href="#" target="_blank" rel="noopener">Ir al registro</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:44px">
+      <div class="head">
+        <p class="eyebrow">Por qué estar ahí</p>
+        <h2 class="display">Un día que se queda contigo.</h2>
+      </div>
+      <div class="reasons">
+        <div><h3>Un reto grande</h3><p>Entrena con intención, llega con tu grupo y rueda con orgullo.</p></div>
+        <div><h3>Siente la ruta</h3><p>Tú pon las piernas. La ruta pone el resto.</p></div>
+        <div><h3>Ven con tu club</h3><p>Arma tu bloque, convoca a tu equipo y lleguen juntos a la salida.</p></div>
+        <div><h3>Meta como pro</h3><p>Jersey, medalla, fotos y esa sensación de cruzar la meta.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="distancias">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:44px">
+      <div class="head">
+        <p class="eyebrow">Distancias</p>
+        <h2 class="display">Elige el reto que te prende.</h2>
+        <p class="lead">Opciones pensadas para distintos niveles. La ruta completa se compartirá con los registrados.</p>
+      </div>
+      <div class="dist">
+        <article><span class="km">60 km</span><span class="tag">Para disfrutar el reto</span><p>Ideal si vas por tu primera rodada larga o quieres vivir la experiencia a tu ritmo.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km">100 km</span><span class="tag">Para ir por más</span><p>Para quien ya rueda constante y quiere ponerse a prueba.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km">140 km</span><span class="tag">Para llegar a fondo</span><p>Para ciclistas con fondo y piernas que quieren exigirse de verdad.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km">Gran fondo</span><span class="tag">El reto completo</span><p>La experiencia total para quien quiere rodar como pro de principio a fin.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="kit" style="background:var(--soft)">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Kit de corredor</p>
+        <h2 class="display">Llévate algo más que kilómetros.</h2>
+        <p class="lead">Jersey, número, medalla y esa foto de meta que vale todo el entrenamiento.</p>
+      </div>
+      <ul>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e4007c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Jersey edición 2026</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e4007c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Número y chip de cronometraje</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e4007c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Medalla finisher</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e4007c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Hidratación y puntos de energía</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e4007c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Apoyo en ruta</li>
+        <li><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e4007c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Village de llegada</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="clubs">
+    <div class="wrap">
+      <div class="txt">
+        <h2 class="display">¿Vienes con tu club?</h2>
+        <p>La salida se vive mejor en bloque. Capitanes y equipos: escríbannos y les ayudamos a registrar a su crew.</p>
+      </div>
+      <a class="mail" href="mailto:clubes@giro-mexico.com">clubes@giro-mexico.com</a>
+    </div>
+  </section>
+
+  <section id="dudas" class="faq">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Resolvemos tus dudas</p>
+        <h2 class="display">Antes de dar el clic.</h2>
+        <p class="lead">¿No encuentras tu respuesta? Escríbenos a <a href="mailto:participantes@giro-mexico.com" style="font-weight:700">participantes@giro-mexico.com</a>.</p>
+      </div>
+      <div class="list">
+        <details open><summary>¿Por qué el registro está en otra página?<span class="sign" aria-hidden="true"></span></summary><p>El registro y la confirmación de tu lugar se procesan en la plataforma oficial del evento. Desde esta página te explicamos todo; al dar clic en «Quiero registrarme» se abre esa plataforma en una pestaña nueva.</p></details>
+        <details><summary>¿Dónde es y cómo llego?<span class="sign" aria-hidden="true"></span></summary><p>La sede es El Zet | Clínica de Artes y Danza, en Roma Norte, CDMX. Queda a unos 14 minutos a pie del Metro Insurgentes.</p></details>
+        <details><summary>¿Qué nivel necesito?<span class="sign" aria-hidden="true"></span></summary><p>Hay opciones para distintos niveles: 60 km para disfrutar el reto, 100 km para ir por más, 140 km para llegar a fondo y el gran fondo para quien quiere el reto completo. Elige el que más te emocione.</p></details>
+        <details><summary>¿Cuándo conoceré la ruta completa?<span class="sign" aria-hidden="true"></span></summary><p>La ruta completa se anunciará pronto y se compartirá directamente con las personas registradas.</p></details>
+        <details><summary>¿Qué incluye mi kit?<span class="sign" aria-hidden="true"></span></summary><p>Jersey de la edición 2026, número de participante con chip de cronometraje, medalla finisher, hidratación y puntos de energía, apoyo en ruta y acceso al village de llegada.</p></details>
+        <details><summary>¿Dónde recojo mi kit?<span class="sign" aria-hidden="true"></span></summary><p>Te enviaremos los detalles de entrega de kit cuando se acerque la fecha.</p></details>
+        <details><summary>¿Puedo registrar a mi club o equipo?<span class="sign" aria-hidden="true"></span></summary><p>Sí. Escríbenos a clubes@giro-mexico.com con el nombre del club, el capitán y el número estimado de ciclistas, y te ayudamos a organizar a tu bloque.</p></details>
+        <details><summary>¿Y si soy menor de edad?<span class="sign" aria-hidden="true"></span></summary><p>El registro requiere confirmar mayoría de edad. Si necesitas información para un menor, escríbenos a participantes@giro-mexico.com.</p></details>
+        <details><summary>¿Qué pasa si después no puedo asistir?<span class="sign" aria-hidden="true"></span></summary><p>Las opciones disponibles se indican en el reglamento y en la plataforma de registro. Si tienes un caso particular, escríbenos y te orientamos.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final dark">
+    <div class="slab" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Te esperamos</p>
+      <h2 class="display">Nos vemos el 24 de noviembre.</h2>
+      <p>El Zet | Clínica de Artes y Danza, Roma Norte, CDMX. A 14 minutos a pie del Metro Insurgentes. Trae tus piernas, tu bloque y tus ganas.</p>
+      <a class="btn" data-registro href="#" target="_blank" rel="noopener">Asegurar mi lugar
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Giro México. Todos los derechos reservados.</span>
+    <span style="display:flex;gap:20px;flex-wrap:wrap">
+      <a href="mailto:participantes@giro-mexico.com">participantes@giro-mexico.com</a>
+      <a href="https://giro-mexico-2026.vercel.app/legal" target="_blank" rel="noopener">Aviso de privacidad y reglamento</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // ===== CONFIGURACIÓN =====
+  // Pega aquí la URL de la plataforma externa de registro.
+  // Todos los botones de registro de la página usan este enlace.
+  var REGISTRO_URL = "#";
+
+  document.querySelectorAll('[data-registro]').forEach(function (a) {
+    a.href = REGISTRO_URL;
+    if (REGISTRO_URL === "#") { a.removeAttribute('target'); }
+  });
+
+  // Cuenta regresiva al 24 de noviembre de 2026 (hora de CDMX)
+  (function () {
+    var evento = new Date('2026-11-24T00:00:00-06:00').getTime();
+    var dias = Math.ceil((evento - Date.now()) / 86400000);
+    var el = document.getElementById('cuenta');
+    el.textContent = dias > 1 ? dias + ' días' : (dias === 1 ? '1 día' : '¡Es hoy!');
+  })();
+</script>
+</body>
+</html>
