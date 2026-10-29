@@ -51,8 +51,30 @@
   @media (max-width:720px){nav a.link{display:none}header .wrap{flex-wrap:nowrap}.logo img{height:44px}.logo span{font-size:22px}}
 
   /* Hero */
-  .hero{position:relative;overflow:hidden;background:#000 url("https://static2.giroditalia.it/wp-content/uploads/2026/05/YYbl8OCrFFc5vSCngwOA_300526-095902-2048x1365.jpg") center/cover no-repeat}
-  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.82) 50%,rgba(0,0,0,.6) 100%)}
+  .hero{position:relative;overflow:hidden;background:#000}
+  .hero-bg{position:absolute;inset:-3%;background:url("https://static2.giroditalia.it/wp-content/uploads/2026/05/YYbl8OCrFFc5vSCngwOA_300526-095902-2048x1365.jpg") center/cover no-repeat;animation:kenburns 26s ease-in-out infinite alternate;z-index:0}
+  @keyframes kenburns{from{transform:scale(1.08) translate3d(-1%,0,0)}to{transform:scale(1) translate3d(1%,-1%,0)}}
+  .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.82) 50%,rgba(0,0,0,.6) 100%)}
+  .hero .wrap{z-index:3}
+  /* Líneas de velocidad (eco del logo) */
+  .speed{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 52%,#000 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 52%,#000 72%,#000 100%)}
+  @media (max-width:900px){.speed{-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 28%,transparent 40%);mask-image:linear-gradient(180deg,#000 0%,#000 28%,transparent 40%)}}
+  .speed span{position:absolute;right:-30%;height:6px;background:var(--pink);opacity:.85;animation:streak linear infinite}
+  .speed span.w{background:#fff;opacity:.5;height:3px}
+  @keyframes streak{from{transform:translateX(0)}to{transform:translateX(-170vw)}}
+  /* Titular que entra por líneas */
+  .hero h1 .ln{display:block;overflow:hidden}
+  .hero h1 .ln>span{display:block;animation:rise .9s cubic-bezier(.2,.75,.2,1) both}
+  .hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
+  .hero h1 .ln:nth-child(3)>span{animation-delay:.24s}
+  .hero h1 .ln:nth-child(4)>span{animation-delay:.36s}
+  @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+  .hero h1 .pk{color:var(--pink)}
+  .hero-logo img{animation:logoIn 1.1s .35s cubic-bezier(.2,.75,.2,1) both}
+  @keyframes logoIn{from{opacity:0;transform:translateX(40px) skewX(-8deg)}to{opacity:1;transform:none}}
+  /* Cuenta regresiva viva */
+  .clock{font-variant-numeric:tabular-nums;letter-spacing:.01em}
+  .clock i{font-style:normal;font-size:.6em;color:#bdbdc2;margin:0 6px 0 1px}
   @media (max-width:900px){.hero::before{background:rgba(0,0,0,.84)}}
   .hero .facts div{background:rgba(0,0,0,.88)}
   /* Galería */
@@ -135,13 +157,66 @@
   details p{margin:0;padding:0 4px 24px;font-size:17px;line-height:1.65;color:var(--muted);max-width:720px}
 
   /* Cierre */
-  .final{position:relative;overflow:hidden}
-  .final .slab{position:absolute;left:-160px;bottom:-60px;width:420px;height:700px;background:var(--pink);transform:skewX(-14deg)}
-  .final .wrap{position:relative;display:flex;flex-direction:column;gap:26px;align-items:flex-end;text-align:right;padding-top:112px;padding-bottom:112px}
+  .final{position:relative;overflow:hidden;background:#000}
+  .final-bg{position:absolute;inset:-6% 0;background:url("https://images.unsplash.com/photo-1682916114863-ba2f7b7d39c9?w=2000&q=75&auto=format&fit=crop") center 22%/cover no-repeat;will-change:transform}
+  .final::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(270deg,rgba(0,0,0,.93) 0%,rgba(0,0,0,.72) 48%,rgba(0,0,0,.2) 100%)}
+  @media (max-width:900px){.final::before{background:rgba(0,0,0,.78)}}
+  .final .wrap{position:relative;z-index:2;display:flex;flex-direction:column;gap:26px;align-items:flex-end;text-align:right;padding-top:140px;padding-bottom:120px}
+  .place{display:flex;align-items:center;gap:16px;background:rgba(0,0,0,.72);border:2px solid var(--pink);padding:16px 18px;text-align:left;max-width:560px;flex-wrap:wrap}
+  .place svg{flex:0 0 auto}
+  .place div{display:flex;flex-direction:column;gap:2px;flex:1 1 240px}
+  .place strong{font-size:17px}
+  .place span{font-size:15px;color:#d9d9dc}
+  .place a{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--pink);padding:8px 0}
+  .place a:hover{color:var(--pink-light)}
+  .final p.photo-credit{color:#a7a7ad;font-size:12px}
   .final h2{font-size:clamp(48px,9vw,120px);line-height:.88;max-width:900px}
   .final p{margin:0;font-size:19px;line-height:1.6;max-width:560px;color:#e6e6e8}
   .final .btn{font-size:20px;padding:20px 34px;min-height:60px}
-  @media (max-width:720px){.final .slab{left:-340px}}
+
+  /* Barra de progreso: los km que llevas recorridos en la página */
+  .progress{position:absolute;left:0;right:0;bottom:-1px;height:4px;background:#1c1c1e}
+  .progress span{display:block;height:100%;width:0;background:var(--pink);transition:width .1s linear}
+  .progress em{position:absolute;top:8px;font-style:normal;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.08em;background:var(--pink);color:#fff;padding:2px 7px;transform:translateX(-100%);white-space:nowrap;transition:left .1s linear;opacity:0}
+  header.scrolled .progress em{opacity:1}
+
+  /* Cinta corrida */
+  .ticker{background:var(--pink);color:#fff;overflow:hidden;white-space:nowrap;border-block:2px solid #000}
+  .ticker-track{display:inline-flex;align-items:center;gap:28px;padding:14px 0;animation:marquee 32s linear infinite;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;text-transform:uppercase;letter-spacing:.04em}
+  .ticker-track b{display:inline-block;width:10px;height:22px;background:#000;transform:skewX(-14deg)}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+
+  /* Aparición al hacer scroll */
+  .rv{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.2,.75,.2,1),transform .7s cubic-bezier(.2,.75,.2,1);transition-delay:var(--d,0s)}
+  .rv.in{opacity:1;transform:none}
+
+  /* Botones con destello */
+  .btn{position:relative;overflow:hidden}
+  .btn::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:none}
+  .btn:hover::after{left:130%;transition:left .6s ease}
+  .btn-lg::after{animation:shine 4.5s 2s ease-in-out infinite}
+  @keyframes shine{0%,70%{left:-60%}100%{left:130%}}
+
+  /* Tarjetas de distancia */
+  .dist article{transition:background .25s,color .25s,transform .25s;background:#fff}
+  .dist article:hover{background:var(--ink);color:#fff;transform:translateY(-6px)}
+  .dist article:hover p{color:#d9d9dc}
+  .dist article:hover .tag{color:var(--pink-light)}
+  .dist article:hover a{color:#fff}
+  .dist .km{font-variant-numeric:tabular-nums}
+  .dist .bar{height:6px;background:#eee;position:relative;overflow:hidden}
+  .dist .bar i{position:absolute;inset:0 auto 0 0;width:0;background:var(--pink);transition:width 1.4s cubic-bezier(.2,.75,.2,1)}
+  .dist article:hover .bar{background:#262628}
+
+  /* Galería */
+  .gallery img{transition:transform .8s cubic-bezier(.2,.75,.2,1)}
+  .gallery figure:hover img{transform:scale(1.07)}
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .rv{opacity:1;transform:none}
+    .speed{display:none}
+  }
 
   footer{background:var(--ink);color:#bdbdc2;border-top:1px solid #262628}
   footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between;font-size:14px;padding-top:32px;padding-bottom:32px}
@@ -160,15 +235,18 @@
       <a class="btn" data-registro href="#" target="_blank" rel="noopener">Registrarme</a>
     </nav>
   </div>
+  <div class="progress" aria-hidden="true"><span id="progBar"></span><em id="progKm">KM 0</em></div>
 </header>
 
 <main>
   <section id="inicio" class="hero dark">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="speed" id="speed" aria-hidden="true"></div>
     <div class="wrap">
       <div class="hero-grid">
       <div class="hero-copy">
       <p class="badge">Be the Maglia Rosa · Registro abierto</p>
-      <h1 class="display">Rueda como pro.<br>Asegura tu lugar.</h1>
+      <h1 class="display" aria-label="Rueda como pro. Asegura tu lugar."><span class="ln" aria-hidden="true"><span>Rueda</span></span><span class="ln" aria-hidden="true"><span>como <span class="pk">pro.</span></span></span><span class="ln" aria-hidden="true"><span>Asegura</span></span><span class="ln" aria-hidden="true"><span>tu lugar.</span></span></h1>
       <p class="sub">Giro México 2026 trae el espíritu gran fondo a la CDMX: entrenas, llegas con tu bloque y cruzas una meta con jersey, medalla y comunidad. Tu registro se completa en un par de minutos.</p>
       <div class="row">
         <a class="btn btn-lg" data-registro href="#" target="_blank" rel="noopener">Quiero registrarme
@@ -186,10 +264,17 @@
         <div><small>Fecha</small><strong>24 nov 2026</strong></div>
         <div><small>Sede</small><strong>Roma Norte, CDMX</strong></div>
         <div><small>Distancias</small><strong>60 a 140 km</strong></div>
-        <div><small>Faltan</small><strong class="pink" id="cuenta">—</strong></div>
+        <div><small>Faltan</small><strong class="pink clock" id="cuenta">—</strong></div>
       </div>
     </div>
   </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Be the Maglia Rosa</span><b></b><span>24 · 11 · 2026</span><b></b><span>Roma Norte · CDMX</span><b></b><span>60 · 100 · 140 km</span><b></b><span>Ride like a pro</span><b></b>
+      <span>Be the Maglia Rosa</span><b></b><span>24 · 11 · 2026</span><b></b><span>Roma Norte · CDMX</span><b></b><span>60 · 100 · 140 km</span><b></b><span>Ride like a pro</span><b></b>
+    </div>
+  </div>
 
   <section id="como">
     <div class="wrap" style="display:flex;flex-direction:column;gap:44px">
@@ -240,10 +325,10 @@
         <p class="lead">Opciones pensadas para distintos niveles. La ruta completa se compartirá con los registrados.</p>
       </div>
       <div class="dist">
-        <article><span class="km">60 km</span><span class="tag">Para disfrutar el reto</span><p>Ideal si vas por tu primera rodada larga o quieres vivir la experiencia a tu ritmo.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
-        <article><span class="km">100 km</span><span class="tag">Para ir por más</span><p>Para quien ya rueda constante y quiere ponerse a prueba.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
-        <article><span class="km">140 km</span><span class="tag">Para llegar a fondo</span><p>Para ciclistas con fondo y piernas que quieren exigirse de verdad.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
-        <article><span class="km">Gran fondo</span><span class="tag">El reto completo</span><p>La experiencia total para quien quiere rodar como pro de principio a fin.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km" data-count="60">60 km</span><span class="bar"><i data-w="43%"></i></span><span class="tag">Para disfrutar el reto</span><p>Ideal si vas por tu primera rodada larga o quieres vivir la experiencia a tu ritmo.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km" data-count="100">100 km</span><span class="bar"><i data-w="71%"></i></span><span class="tag">Para ir por más</span><p>Para quien ya rueda constante y quiere ponerse a prueba.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km" data-count="140">140 km</span><span class="bar"><i data-w="100%"></i></span><span class="tag">Para llegar a fondo</span><p>Para ciclistas con fondo y piernas que quieren exigirse de verdad.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
+        <article><span class="km">Gran fondo</span><span class="bar"><i data-w="100%"></i></span><span class="tag">El reto completo</span><p>La experiencia total para quien quiere rodar como pro de principio a fin.</p><a data-registro href="#" target="_blank" rel="noopener">Registrarme a este reto</a></article>
       </div>
     </div>
   </section>
@@ -298,14 +383,20 @@
   </section>
 
   <section class="final dark">
-    <div class="slab" aria-hidden="true"></div>
+    <div class="final-bg" id="finalBg" role="img" aria-label="Paseo de la Reforma y el Ángel de la Independencia, Ciudad de México"></div>
     <div class="wrap">
-      <p class="eyebrow">Te esperamos</p>
+      <p class="eyebrow">Te esperamos en CDMX</p>
       <h2 class="display">Nos vemos el 24 de noviembre.</h2>
-      <p>El Zet | Clínica de Artes y Danza, Roma Norte, CDMX. A 14 minutos a pie del Metro Insurgentes. Trae tus piernas, tu bloque y tus ganas.</p>
+      <p>La salida es en Roma Norte, a unos pasos de Reforma y de Insurgentes. Trae tus piernas, tu bloque y tus ganas.</p>
+      <div class="place">
+        <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <div><strong>El Zet | Clínica de Artes y Danza</strong><span>Roma Norte, CDMX · 14 min a pie del Metro Insurgentes</span></div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=El%20Zet%20Cl%C3%ADnica%20de%20Artes%20y%20Danza%20Roma%20Norte%20CDMX" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
       <a class="btn" data-registro href="#" target="_blank" rel="noopener">Asegurar mi lugar
         <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
       </a>
+      <p class="photo-credit">Foto: Paseo de la Reforma, CDMX · Alejandro Giraldo Ortega / Unsplash</p>
     </div>
   </section>
 </main>
@@ -331,13 +422,99 @@
     if (REGISTRO_URL === "#") { a.removeAttribute('target'); }
   });
 
-  // Cuenta regresiva al 24 de noviembre de 2026 (hora de CDMX)
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Cuenta regresiva en vivo al 24 de noviembre de 2026 (hora de CDMX)
   (function () {
     var evento = new Date('2026-11-24T00:00:00-06:00').getTime();
-    var dias = Math.ceil((evento - Date.now()) / 86400000);
     var el = document.getElementById('cuenta');
-    el.textContent = dias > 1 ? dias + ' días' : (dias === 1 ? '1 día' : '¡Es hoy!');
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+    function tick() {
+      var s = Math.floor((evento - Date.now()) / 1000);
+      if (s <= 0) { el.textContent = '¡Es hoy!'; return; }
+      var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60), x = s % 60;
+      el.innerHTML = d + '<i>d</i>' + pad(h) + '<i>h</i>' + pad(m) + '<i>m</i>' + pad(x) + '<i>s</i>';
+    }
+    tick(); setInterval(tick, 1000);
   })();
+
+  // Líneas de velocidad en la portada
+  (function () {
+    var box = document.getElementById('speed');
+    if (!box || reduce) return;
+    for (var i = 0; i < 16; i++) {
+      var s = document.createElement('span');
+      if (i % 3 === 0) s.className = 'w';
+      s.style.top = (8 + Math.random() * 84) + '%';
+      s.style.width = (40 + Math.random() * 180) + 'px';
+      s.style.animationDuration = (2.2 + Math.random() * 3.5) + 's';
+      s.style.animationDelay = (-Math.random() * 6) + 's';
+      box.appendChild(s);
+    }
+  })();
+
+  // Barra de progreso: cuántos "km" llevas de la página
+  (function () {
+    var header = document.querySelector('header');
+    var bar = document.getElementById('progBar'), km = document.getElementById('progKm');
+    var finalBg = document.getElementById('finalBg');
+    var ticking = false;
+    function update() {
+      var max = document.documentElement.scrollHeight - innerHeight;
+      var p = max > 0 ? Math.min(1, scrollY / max) : 0;
+      bar.style.width = (p * 100) + '%';
+      km.style.left = 'max(70px, ' + (p * 100) + '%)';
+      km.textContent = p >= 0.995 ? 'META' :'KM ' + Math.round(p * 140);
+      header.classList.toggle('scrolled', scrollY > 40);
+      if (finalBg && !reduce) {
+        var r = finalBg.parentNode.getBoundingClientRect();
+        var off = (r.top + r.height / 2 - innerHeight / 2) * -0.12;
+        finalBg.style.transform = 'translate3d(0,' + off + 'px,0)';
+      }
+      ticking = false;
+    }
+    addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    addEventListener('resize', update);
+    update();
+  })();
+
+  // Aparición al hacer scroll + contadores de km
+  (function () {
+    var sel = 'main section:not(.hero) .head, .steps li, .tip, .gallery figure, .reasons > div, .dist article, .kit li, .clubs .txt, .clubs a.mail, .faq details, .final .wrap > *';
+    var items = document.querySelectorAll(sel);
+    if (reduce || !('IntersectionObserver' in window)) return;
+    var groups = new Map();
+    items.forEach(function (el) {
+      var parent = el.parentNode, idx = groups.get(parent) || 0;
+      groups.set(parent, idx + 1);
+      el.style.setProperty('--d', Math.min(idx, 6) * 0.08 + 's');
+      el.classList.add('rv');
+    });
+    function countUp(el) {
+      var to = +el.getAttribute('data-count'), t0 = null;
+      function step(t) {
+        if (!t0) t0 = t;
+        var k = Math.min(1, (t - t0) / 1200), e = 1 - Math.pow(1 - k, 3);
+        el.textContent = Math.round(to * e) + ' km';
+        if (k < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        el.classList.add('in');
+        var c = el.querySelector && el.querySelector('[data-count]');
+        if (c) countUp(c);
+        var b = el.querySelector && el.querySelector('.bar i');
+        if (b) b.style.width = b.getAttribute('data-w');
+        io.unobserve(el);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+  if (reduce || !('IntersectionObserver' in window)) { document.querySelectorAll('.bar i').forEach(function (b) { b.style.width = b.getAttribute('data-w'); }); }
 </script>
 </body>
 </html>
