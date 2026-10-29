@@ -51,7 +51,17 @@
   @media (max-width:720px){nav a.link{display:none}header .wrap{flex-wrap:nowrap}.logo img{height:44px}.logo span{font-size:22px}}
 
   /* Hero */
-  .hero{position:relative;overflow:hidden}
+  .hero{position:relative;overflow:hidden;background:#000 url("https://static2.giroditalia.it/wp-content/uploads/2026/05/YYbl8OCrFFc5vSCngwOA_300526-095902-2048x1365.jpg") center/cover no-repeat}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.82) 50%,rgba(0,0,0,.6) 100%)}
+  @media (max-width:900px){.hero::before{background:rgba(0,0,0,.84)}}
+  .hero .facts div{background:rgba(0,0,0,.88)}
+  /* Galería */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:0}
+  .gallery figure{margin:0;position:relative;aspect-ratio:4/3;overflow:hidden;background:#111}
+  .gallery img{width:100%;height:100%;object-fit:cover;display:block}
+  .gallery img.lift{filter:brightness(1.7) contrast(1.05)}
+  .gallery figcaption{position:absolute;left:0;bottom:0;background:var(--pink);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.03em;padding:8px 14px}
+  .photo-credit{margin:0;font-size:12px;color:#8e8e94}
   .hero .wrap{position:relative;display:flex;flex-direction:column;gap:28px;padding-top:80px;padding-bottom:88px}
   .hero-grid{display:flex;flex-wrap:wrap;gap:48px;align-items:center}
   .hero-copy{flex:1 1 560px;min-width:0;display:flex;flex-direction:column;gap:28px}
@@ -207,6 +217,12 @@
         <p class="eyebrow">Por qué estar ahí</p>
         <h2 class="display">Un día que se queda contigo.</h2>
       </div>
+      <div class="gallery">
+        <figure><img src="https://static2.giroditalia.it/wp-content/uploads/2026/05/9QDUpGwDNOweJM0YquWi_310526-094203-1024x683.jpg" alt="Pelotón entrando a la meta en una calle con público" loading="lazy" referrerpolicy="no-referrer"><figcaption>La meta</figcaption></figure>
+        <figure><img class="lift" src="https://static2.giroditalia.it/wp-content/uploads/2020/06/percorso.jpg" alt="Carretera de montaña entre picos rocosos" loading="lazy" referrerpolicy="no-referrer"><figcaption>La ruta</figcaption></figure>
+        <figure><img class="lift" src="https://static2.giroditalia.it/wp-content/uploads/2025/01/6b8U58sFdfIHbLBFYIdy_140125-094935.jpg" alt="Aficionados estirando las manos hacia un ciclista" loading="lazy" referrerpolicy="no-referrer"><figcaption>La afición</figcaption></figure>
+      </div>
+      <p class="photo-credit">Fotos: Giro d'Italia (RCS Sport). Uso de vista previa.</p>
       <div class="reasons">
         <div><h3>Un reto grande</h3><p>Entrena con intención, llega con tu grupo y rueda con orgullo.</p></div>
         <div><h3>Siente la ruta</h3><p>Tú pon las piernas. La ruta pone el resto.</p></div>
