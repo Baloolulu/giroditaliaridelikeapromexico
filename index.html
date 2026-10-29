@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--pink:#e83069;--pink-dark:#c41f55;--pink-text:#c8164f;--pink-light:#ff6f98;--ink:#0b0b0c;--muted:#45454b;--line:#2a2a2d;--soft:#f6f2f4}
+  :root{--pink:#e83069;--pink-dark:#c41f55;--pink-text:#c8164f;--pink-light:#ff6f98;--ink:#000000;--muted:#45454b;--line:#2a2a2d;--soft:#f6f2f4}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth;scroll-padding-top:80px}
   body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
@@ -41,24 +41,25 @@
   header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
   .logo{color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
   .logo:hover{color:#fff}
-  .logo i{display:inline-block;width:14px;height:28px;background:var(--pink);transform:skewX(-14deg)}
+  .logo img{height:56px;width:auto;display:block}
   .logo span{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;letter-spacing:.02em;text-transform:uppercase}
   .logo b{color:var(--pink-light);font-weight:800}
   nav{display:flex;gap:22px;align-items:center;font-size:15px;font-weight:500}
   nav a.link{color:#d9d9dc;text-decoration:none}
   nav a.link:hover{color:#fff}
   nav .btn{padding:12px 20px;min-height:44px}
-  @media (max-width:720px){nav a.link{display:none}}
+  @media (max-width:720px){nav a.link{display:none}header .wrap{flex-wrap:nowrap}.logo img{height:44px}.logo span{font-size:22px}}
 
   /* Hero */
   .hero{position:relative;overflow:hidden}
-  .hero .slab{position:absolute;top:-40px;height:900px;background:var(--pink);transform:skewX(-14deg)}
-  .hero .slab.a{right:-120px;width:520px}
-  .hero .slab.b{right:440px;width:40px}
-  @media (max-width:900px){.hero .slab.a{right:-360px;opacity:.9}.hero .slab.b{display:none}}
-  .hero .wrap{position:relative;display:flex;flex-direction:column;gap:28px;padding-top:96px;padding-bottom:88px}
+  .hero .wrap{position:relative;display:flex;flex-direction:column;gap:28px;padding-top:80px;padding-bottom:88px}
+  .hero-grid{display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+  .hero-copy{flex:1 1 560px;min-width:0;display:flex;flex-direction:column;gap:28px}
+  .hero-logo{flex:0 1 340px;display:flex;justify-content:center}
+  .hero-logo img{width:100%;max-width:340px;height:auto;display:block}
+  @media (max-width:900px){.hero-logo{order:-1;flex-basis:100%;justify-content:flex-start}.hero-logo img{max-width:150px}}
   .badge{margin:0;align-self:flex-start;background:#fff;color:var(--ink);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
-  .hero h1{font-size:clamp(56px,11vw,148px);line-height:.88;max-width:900px;letter-spacing:-.01em}
+  .hero h1{font-size:clamp(52px,8.5vw,124px);line-height:.88;max-width:900px;letter-spacing:-.01em}
   .hero p.sub{margin:0;font-size:clamp(18px,2.2vw,22px);line-height:1.5;max-width:620px;color:#e6e6e8}
   .row{display:flex;gap:14px;flex-wrap:wrap}
   .note{margin:0;font-size:14px;color:#bdbdc2}
@@ -141,7 +142,7 @@
 
 <header>
   <div class="wrap">
-    <a class="logo" href="#inicio"><i aria-hidden="true"></i><span>Giro México <b>2026</b></span></a>
+    <a class="logo" href="#inicio"><img src="brand/ride-like-a-pro-white.png" width="664" height="1063" alt="Giro d'Italia Ride Like a Pro"><span>México <b>2026</b></span></a>
     <nav aria-label="Secciones">
       <a class="link" href="#como">Cómo registrarte</a>
       <a class="link" href="#distancias">Distancias</a>
@@ -153,9 +154,9 @@
 
 <main>
   <section id="inicio" class="hero dark">
-    <div class="slab a" aria-hidden="true"></div>
-    <div class="slab b" aria-hidden="true"></div>
     <div class="wrap">
+      <div class="hero-grid">
+      <div class="hero-copy">
       <p class="badge">Be the Maglia Rosa · Registro abierto</p>
       <h1 class="display">Rueda como pro.<br>Asegura tu lugar.</h1>
       <p class="sub">Giro México 2026 trae el espíritu gran fondo a la CDMX: entrenas, llegas con tu bloque y cruzas una meta con jersey, medalla y comunidad. Tu registro se completa en un par de minutos.</p>
@@ -166,6 +167,11 @@
         <a class="btn-ghost" href="#dudas">Tengo dudas</a>
       </div>
       <p class="note">Al dar clic se abre la plataforma oficial de registro en una pestaña nueva.</p>
+      </div>
+      <div class="hero-logo">
+        <img src="brand/ride-like-a-pro-white.png" width="664" height="1063" alt="Giro d'Italia Ride Like a Pro · Be the Maglia Rosa">
+      </div>
+      </div>
       <div class="facts">
         <div><small>Fecha</small><strong>24 nov 2026</strong></div>
         <div><small>Sede</small><strong>Roma Norte, CDMX</strong></div>
