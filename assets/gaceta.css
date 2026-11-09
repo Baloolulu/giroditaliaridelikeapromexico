@@ -1,0 +1,28 @@
+/* ==========================================================
+   Estilo "La Gaceta": inspirado en el papel rosa y la
+   maquetación de periódico deportivo italiano.
+   Solo se usa en Historia y La Gaceta.
+   ========================================================== */
+.gz{--gz-paper:#fde9eb;--gz-paper-2:#f9dde1;--gz-mag:#be0b57;--gz-ink:#111;--gz-rule:#1a1a1a;
+  background:var(--gz-paper);color:var(--gz-ink);font-family:'Noto Sans',Inter,system-ui,sans-serif;
+  background-image:radial-gradient(rgba(0,0,0,.035) 1px,transparent 1px);background-size:4px 4px}
+.gz .wrap{max-width:1200px}
+.gz-mast{text-align:center;padding:34px 20px 0;border-bottom:4px double var(--gz-rule)}
+.gz-mast .tag{margin:0;font-size:15px;font-style:italic;color:#333}
+.gz-mast .tag b{color:var(--gz-mag);font-style:normal}
+.gz-mast h1{margin:4px 0 6px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(56px,11vw,128px);line-height:.9;letter-spacing:-.01em}
+.gz-mast h1 span{color:var(--gz-mag)}
+.gz-meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--gz-rule);padding:8px 0;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.gz-nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:14px 0 18px}
+.gz-nav button,.gz-nav a{font:inherit;font-size:14px;font-weight:700;background:transparent;border:0;border-bottom:3px solid transparent;padding:8px 10px;min-height:44px;cursor:pointer;color:var(--gz-ink);text-decoration:none}
+.gz-nav button[aria-pressed="true"],.gz-nav a:hover,.gz-nav button:hover{color:var(--gz-mag);border-bottom-color:var(--gz-mag)}
+.gz-kicker{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gz-mag)}
+.gz-h{font-family:'Noto Sans',sans-serif;font-weight:800;line-height:1.12;margin:0;letter-spacing:-.01em}
+.gz-rule{border:0;border-top:1px solid var(--gz-rule);margin:0}
+.gz-cols{columns:3 260px;column-gap:36px;column-rule:1px solid rgba(0,0,0,.25);font-size:17px;line-height:1.7}
+.gz-cols p{margin:0 0 14px;break-inside:avoid-column}
+.gz-drop::first-letter{float:left;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:5.2em;line-height:.8;padding:6px 10px 0 0;color:var(--gz-mag)}
+.gz-stamp{display:inline-block;border:3px solid var(--gz-mag);color:var(--gz-mag);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;transform:rotate(-3deg)}
+.gz-box{background:#fff;border:1px solid var(--gz-rule);box-shadow:6px 6px 0 var(--gz-mag)}
+.gz-src{font-size:13px;color:#555}
+.gz-src a{color:var(--gz-mag);font-weight:700}
