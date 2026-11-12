@@ -52,7 +52,7 @@
     var max = document.documentElement.scrollHeight - innerHeight;
     var p = max > 0 ? Math.min(1, scrollY / max) : 0;
     if (bar) bar.style.width = (p * 100) + '%';
-    if (km) { km.style.left = 'max(70px, ' + (p * 100) + '%)'; km.textContent = p >= 0.995 ? 'META' : 'KM ' + Math.round(p * 132); }
+    if (km) { km.style.left = 'max(70px, ' + (p * 100) + '%)'; km.textContent = p >= 0.995 ? 'META' : 'KM ' + Math.round(p * 120); }
     if (header) header.classList.toggle('scrolled', scrollY > 40);
     if (finalBg && !reduce) {
       var r = finalBg.parentNode.getBoundingClientRect();

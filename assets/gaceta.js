@@ -1,9 +1,9 @@
 /* ==========================================================
-   La Gaceta · fuente de noticias
+   La Gazzetta · fuente de noticias
    ----------------------------------------------------------
    Para publicar notas desde Google Sheets:
-   1. Crea una hoja con una pestaña llamada "Gaceta" y estas
-      columnas en la fila 1 (usa gaceta-plantilla.csv):
+   1. Crea una hoja con una pestaña llamada "Gazzetta" y estas
+      columnas en la fila 1 (usa gazzetta-plantilla.csv):
       fecha | seccion | titulo | resumen | imagen | fuente | url | destacada
       - fecha: AAAA-MM-DD
       - destacada: "si" para la nota principal
@@ -13,13 +13,13 @@
    Si la hoja no responde, la página usa las notas de abajo.
    ========================================================== */
 var GACETA_SHEET_ID = '';
-var GACETA_SHEET_TAB = 'Gaceta';
+var GACETA_SHEET_TAB = 'Gazzetta';
 
 var GACETA_LOCAL = [
   {
     fecha: '2026-11-09', seccion: 'Ride Like a Pro México', destacada: 'si',
     titulo: 'Ride Like a Pro llega al Zócalo: la salida será el 28 de febrero de 2027',
-    resumen: 'La edición mexicana del gran fondo del Giro d’Italia arrancará en la esquina de 20 de Noviembre y el Zócalo capitalino, con tres distancias: Piccolo Fondo (42 km), Medio Fondo (84 km) y Gran Fondo (132 km).',
+    resumen: 'La edición mexicana del gran fondo del Giro d’Italia arrancará en la esquina de 20 de Noviembre y el Zócalo capitalino, con dos distancias: Medio Fondo (60 km) y Gran Fondo (120 km). Al cruzar la meta, todos llegan a GIRO-LAND, la zona de hospitalidad oficial.',
     imagen: 'img/fb-salida.jpg', fuente: 'Organización Ride Like a Pro México', url: 'index.html#distancias'
   },
   {
