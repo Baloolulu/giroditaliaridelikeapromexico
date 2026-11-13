@@ -240,19 +240,26 @@
 
   /* Cierre */
   .final{position:relative;overflow:hidden;background:#000}
-  .final-bg{position:absolute;inset:-6% 0;background:url("https://images.unsplash.com/photo-1645921441624-3d8f9098a2a5?w=2000&q=75&auto=format&fit=crop") center 40%/cover no-repeat;will-change:transform}
-  .final::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(270deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 48%,rgba(0,0,0,.15) 100%)}
+  .final-bg{position:absolute;inset:-6% 0;background:url("https://images.unsplash.com/photo-1645921441624-3d8f9098a2a5?w=2000&q=75&auto=format&fit=crop") 30% 40%/cover no-repeat;will-change:transform}
+  .final::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.15) 35%,rgba(0,0,0,.82) 55%,rgba(0,0,0,.92) 100%)}
   @media (max-width:900px){.final::before{background:rgba(0,0,0,.76)}}
-  .final .wrap{position:relative;z-index:2;display:flex;flex-direction:column;gap:26px;align-items:flex-end;text-align:right;padding-top:140px;padding-bottom:120px}
-  .final h2{font-size:clamp(48px,9vw,120px);line-height:.88;max-width:900px}
-  .final p{margin:0;font-size:19px;line-height:1.6;max-width:560px;color:#e6e6e8}
-  .final .btn{font-size:20px;padding:20px 34px;min-height:60px}
+  .final .wrap{position:relative;z-index:2;display:flex;justify-content:flex-end;padding-top:120px;padding-bottom:110px}
+  .final-copy{width:min(100%,600px);display:flex;flex-direction:column;gap:24px;align-items:flex-start;text-align:left}
+  .final .eyebrow{color:var(--pink-light)}
+  .final h2{font-size:clamp(46px,6.4vw,88px);line-height:.92}
+  .final h2 .pk{color:var(--pink)}
+  .final p{margin:0;font-size:19px;line-height:1.6;color:#e6e6e8}
+  .final-cta{font-family:'Barlow Condensed',sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:.02em;padding:16px 30px;min-height:62px}
   .final p.photo-credit{font-size:12px;color:#a7a7ad}
-  .place{display:flex;align-items:center;gap:16px;background:rgba(0,0,0,.72);border:2px solid var(--pink);padding:16px 18px;text-align:left;max-width:600px;flex-wrap:wrap}
-  .place div{display:flex;flex-direction:column;gap:2px;flex:1 1 260px}
-  .place strong{font-size:17px}
-  .place span{font-size:15px;color:#d9d9dc}
-  .place a{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--pink);padding:8px 0}
+  .place{display:flex;align-items:stretch;gap:16px;background:rgba(0,0,0,.6);border:2px solid var(--pink);padding:16px 18px;width:100%;flex-wrap:wrap}
+  .place svg{align-self:center}
+  .place div{display:flex;flex-direction:column;gap:2px;flex:1 1 240px}
+  .place small{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pink-light)}
+  .place strong{font-size:18px}
+  .place span{font-size:14px;color:#d9d9dc}
+  .place a{color:#fff;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:8px;padding:8px 0 8px 18px;border-left:1px solid #555}
+  .place a:hover{color:var(--pink-light)}
+  @media (max-width:520px){.place a{border-left:0;padding-left:0}}
 </style>
 </head>
 <body>
@@ -540,8 +547,9 @@
   <section class="clubs">
     <div class="wrap">
       <div class="txt" data-rv>
-        <h2 class="display">¿Vienes con tu club?</h2>
-        <p>La salida se vive mejor en equipo. Capitanes y equipos: escríbannos y les ayudamos a registrar a su crew.</p>
+        <p class="eyebrow" style="color:#fff">Contacto para clubes y equipos</p>
+        <h2 class="display">El Giro se vive mejor en equipo.</h2>
+        <p>Reúne a tu club, equipo o comunidad ciclista y participa en una de las grandes celebraciones del ciclismo. Contáctanos y descubre cómo organizar la inscripción de tu grupo.</p>
       </div>
       <a class="mail" href="mailto:clubes@giro-mexico.com" data-rv>clubes@giro-mexico.com</a>
     </div>
@@ -569,20 +577,20 @@
   </section>
 
   <section id="final" class="final dark">
-    <div class="final-bg" id="finalBg" role="img" aria-label="El Zócalo de la Ciudad de México con la bandera monumental y la Catedral"></div>
+    <div class="final-bg" id="finalBg" role="img" aria-label="El Zócalo de la Ciudad de México con la bandera monumental y el Palacio Nacional"></div>
     <div class="wrap">
-      <p class="eyebrow" data-rv>Te esperamos en el Zócalo</p>
-      <h2 class="display" data-rv>Nos vemos el 28 de febrero.</h2>
-      <p data-rv>La salida es en el corazón de la ciudad, donde 20 de Noviembre desemboca en el Zócalo. Trae tus piernas, tu equipo y tus ganas.</p>
-      <div class="place" data-rv>
-        <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
-        <div><strong>Salida: Av. 20 de Noviembre y Zócalo</strong><span>Centro Histórico, CDMX · Metro Zócalo/Tenochtitlan (Línea 2)</span></div>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.%2020%20de%20Noviembre%20y%20Z%C3%B3calo%2C%20Centro%20Hist%C3%B3rico%2C%20CDMX" target="_blank" rel="noopener">Cómo llegar</a>
+      <div class="final-copy">
+        <p class="eyebrow" data-rv>Giro d'Italia Ride Like a Pro · México 2027</p>
+        <h2 class="display" data-rv>El 28 de febrero, la ciudad rueda <span class="pk">con el Giro.</span></h2>
+        <p data-rv>El corazón de la Ciudad de México será el escenario de una experiencia extraordinaria. Una salida emblemática, una ruta espectacular y miles de apasionados por el ciclismo.</p>
+        <div class="place" data-rv>
+          <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <div><small>Salida oficial</small><strong>Zócalo de la Ciudad de México</strong><span>Centro Histórico · Acceso por Av. 20 de Noviembre</span></div>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.%2020%20de%20Noviembre%20y%20Z%C3%B3calo%2C%20Centro%20Hist%C3%B3rico%2C%20CDMX" target="_blank" rel="noopener">Cómo llegar <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <a class="btn final-cta" href="https://www.entusmarcas.com/" target="_blank" rel="noopener" data-rv>Inscríbete y vive el Giro <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <p class="photo-credit">Foto: Zócalo, CDMX · Luis Andrés Villalón Vega / Unsplash · Portada: Giro d'Italia (RCS Sport), uso de vista previa</p>
       </div>
-      <a class="btn" href="https://www.entusmarcas.com/" target="_blank" rel="noopener" data-rv>Asegurar mi lugar
-        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-      </a>
-      <p class="photo-credit">Foto: Zócalo, CDMX · Luis Andrés Villalón Vega / Unsplash · Portada: Giro d'Italia (RCS Sport), uso de vista previa</p>
     </div>
   </section>
 </main>
@@ -590,9 +598,10 @@
 <footer class="site">
   <div class="wrap">
     <div class="flogo"><img src="brand/logo-gfmx-sm.png" width="440" height="322" alt="Giro d'Italia Ride Like a Pro Gran Fondo México"><p style="margin:12px 0 0">28 de febrero de 2027 · Zócalo, CDMX</p></div>
-    <div><h3>El evento</h3><ul><li><a href="index.html#experiencia">La experiencia</a></li><li><a href="index.html#distancias">Distancias</a></li><li><a href="https://www.entusmarcas.com/" target="_blank" rel="noopener">Inscripciones</a></li><li><a href="index.html#dudas">Preguntas frecuentes</a></li></ul></div>
-    <div><h3>El Giro</h3><ul><li><a href="historia.html">Historia</a></li><li><a href="gaceta.html">La Gazzetta</a></li><li><a href="https://www.giroditalia.it/es/" target="_blank" rel="noopener">giroditalia.it</a></li></ul></div>
-    <div><h3>Contacto</h3><ul><li><a href="mailto:participantes@giro-mexico.com">participantes@giro-mexico.com</a></li><li><a href="mailto:clubes@giro-mexico.com">clubes@giro-mexico.com</a></li><li><a href="https://www.facebook.com/profile.php?id=100078062513721" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    <div><h3>El evento</h3><ul><li><a href="index.html#experiencia">La experiencia</a></li><li><a href="index.html#distancias">Distancias</a></li><li><a href="https://www.entusmarcas.com/" target="_blank" rel="noopener">Inscripciones</a></li><li><a href="index.html#giroland">GIROLAND</a></li></ul></div>
+    <div><h3>El Giro</h3><ul><li><a href="historia.html">Historia</a></li><li><a href="gaceta.html">La Gazzetta</a></li><li><a href="index.html#dudas">Preguntas frecuentes</a></li></ul></div>
+    <div><h3>Contacto</h3><ul><li><a href="mailto:participantes@giro-mexico.com">participantes@giro-mexico.com</a></li><li><a href="mailto:clubes@giro-mexico.com">clubes@giro-mexico.com</a></li></ul></div>
+    <div><h3>Síguenos</h3><div class="social"><a href="https://www.facebook.com/profile.php?id=100078062513721" target="_blank" rel="noopener" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8z"/></svg></a></div></div>
   </div>
   <div class="wrap legal"><span>© 2026 Giro d'Italia Ride Like a Pro México.</span><a href="https://giro-mexico-2026.vercel.app/legal" target="_blank" rel="noopener">Aviso de privacidad y reglamento</a></div>
 </footer>
