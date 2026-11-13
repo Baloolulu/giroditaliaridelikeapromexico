@@ -19,7 +19,7 @@ var GACETA_LOCAL = [
   {
     fecha: '2026-11-09', seccion: 'Ride Like a Pro México', destacada: 'si',
     titulo: 'Ride Like a Pro llega al Zócalo: la salida será el 28 de febrero de 2027',
-    resumen: 'La edición mexicana del gran fondo del Giro d’Italia arrancará en la esquina de 20 de Noviembre y el Zócalo capitalino, con dos distancias: Medio Fondo (60 km) y Gran Fondo (120 km). Al cruzar la meta, todos llegan a GIRO-LAND, la zona de hospitalidad oficial.',
+    resumen: 'La edición mexicana del gran fondo del Giro d’Italia arrancará en la esquina de 20 de Noviembre y el Zócalo capitalino, con dos distancias: Medio Fondo (60 km) y Gran Fondo (120 km). Al cruzar la meta, todos llegan a GIROLAND, la zona de hospitalidad oficial.',
     imagen: 'img/fb-salida.jpg', fuente: 'Organización Ride Like a Pro México', url: 'index.html#distancias'
   },
   {

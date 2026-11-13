@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Giro d'Italia Ride Like a Pro México 2027 | Gran Fondo en CDMX</title>
-<meta name="description" content="Giro d'Italia Ride Like a Pro México: 28 de febrero de 2027, salida en el Zócalo de la CDMX. Medio Fondo 60 km y Gran Fondo 120 km. Llega a GIRO-LAND y vive el Giro como pro.">
+<meta name="description" content="Giro d'Italia Ride Like a Pro México: 28 de febrero de 2027, salida en el Zócalo de la CDMX. Medio Fondo 60 km y Gran Fondo 120 km. Llega a GIROLAND y vive el Giro como pro.">
 <meta name="theme-color" content="#e83069">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
@@ -82,6 +82,47 @@
   .pillars span{font-size:15px;line-height:1.55;color:#cfcfd4}
   .pillars svg{flex:0 0 auto}
 
+  .hero .kicker{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3.2vw,40px);text-transform:uppercase;line-height:1;color:#fff}
+  .hero .tagline{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;letter-spacing:.06em;text-transform:uppercase;color:var(--pink)}
+  .hero-logo{flex:0 1 420px}
+  .hero-logo img{max-width:420px}
+  @media (max-width:900px){.hero-logo img{max-width:240px}}
+  header.site .logo img{height:60px}
+  @media (max-width:520px){header.site .logo img{height:48px}}
+  .kicker-dark{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(24px,2.8vw,34px);text-transform:uppercase;line-height:1.05;color:var(--pink-text)}
+  .story{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+  .story a{display:flex;flex-direction:column;gap:14px;color:#fff;text-decoration:none}
+  .story .img{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:14px;background:#111}
+  .story img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.75,.2,1)}
+  .story a:hover img{transform:scale(1.06)}
+  .story .txt{display:flex;flex-direction:column;gap:6px}
+  .story small{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-light)}
+  .story b{font-family:'Barlow Condensed',sans-serif;font-size:28px;text-transform:uppercase;line-height:1.05}
+  .story .txt>span{font-size:15px;line-height:1.6;color:#cfcfd4}
+  .fest{border-top:1px solid #2a2a2d;padding-top:40px}
+  .pillars{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))!important}
+  .pillars small{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--pink-light)}
+  .crew small{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-text)}
+  .dist2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px}
+  .dist2 article{background:#0b0b0c;color:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+  .dist2 .ph{aspect-ratio:16/10;overflow:hidden}
+  .dist2 .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.75,.2,1)}
+  .dist2 article:hover .ph img{transform:scale(1.05)}
+  .dist2 .body{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1 1 auto}
+  .dist2 .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .dist2 .top small{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--pink-light)}
+  .dist2 .pill{font-size:12px;font-weight:700;background:#232326;border-radius:999px;padding:5px 11px}
+  .dist2 h3{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(30px,3.2vw,40px);text-transform:uppercase;line-height:1}
+  .dist2 .km{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(40px,4.4vw,56px);line-height:.9;color:var(--pink);font-variant-numeric:tabular-nums}
+  .dist2 p{margin:0;font-size:16px;line-height:1.6;color:#d9d9dc}
+  .dist2 dl{margin:6px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid #2a2a2d;padding-top:14px}
+  .dist2 dt{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#a7a7ad}
+  .dist2 dd{margin:4px 0 0;font-weight:700;font-size:15px}
+  .dist2 .discover{margin-top:auto;display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:999px;background:#232326;color:#fff;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;transition:background .2s}
+  .dist2 .discover:hover{background:var(--pink)}
+  @media (max-width:480px){.dist2 dl{grid-template-columns:1fr 1fr}}
+  .kit-hero{margin:0;border-radius:16px;overflow:hidden;background:#000}
+  .kit-hero img{width:100%;height:auto;display:block}
   /* Ruta */
   .tabs{display:flex;gap:0;border:2px solid #000;flex-wrap:wrap}
   .tabs button{flex:1 1 140px;background:#fff;border:0;border-right:2px solid #000;padding:14px 16px;min-height:52px;font:inherit;font-weight:700;cursor:pointer;text-align:left}
@@ -218,7 +259,7 @@
 
 <header class="site">
   <div class="wrap">
-    <a class="logo" href="index.html"><img src="brand/ride-like-a-pro-white.png" width="664" height="1063" alt="Giro d'Italia Ride Like a Pro"><span>México <b>2027</b></span></a>
+    <a class="logo" href="index.html"><img src="brand/logo-gfmx-sm.png" width="440" height="322" alt="Giro d'Italia Ride Like a Pro Gran Fondo México"></a>
     <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     <nav class="main" id="nav" aria-label="Principal">
       <a class="link" href="#experiencia">La experiencia</a>
@@ -240,9 +281,11 @@
     <div class="wrap">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="badge">Be the Maglia Rosa · Registro abierto</p>
+          <p class="badge">Registro abierto · 28 feb 2027</p>
           <h1 class="display" aria-label="Rueda como pro. Asegura tu lugar."><span class="ln" aria-hidden="true"><span>Rueda</span></span><span class="ln" aria-hidden="true"><span>como <span class="pk">pro.</span></span></span><span class="ln" aria-hidden="true"><span>Asegura</span></span><span class="ln" aria-hidden="true"><span>tu lugar.</span></span></h1>
-          <p class="sub">El gran fondo del Giro d'Italia sale del Zócalo de la Ciudad de México. Entrena, rueda como profesional y celebra en <span class="nw">GIRO-LAND</span> con tu medalla y toda tu gente.</p>
+          <p class="kicker">El espíritu del Giro. Tu propia historia.</p>
+          <p class="sub"><b>La grandeza del ciclismo mundial llega a México.</b><br>Una salida legendaria, kilómetros de desafío y una experiencia que va mucho más allá de cruzar una meta. Comparte la ruta, supera tus límites y vive la pasión del Giro d'Italia Ride Like a Pro.</p>
+          <p class="tagline">Be the Maglia Rosa.</p>
           <div class="row">
             <a class="btn btn-lg" href="https://www.entusmarcas.com/" target="_blank" rel="noopener">Quiero registrarme
               <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
@@ -252,7 +295,7 @@
           <p class="note">Las inscripciones son a través de Entusmarcas, la boletera oficial del evento.</p>
         </div>
         <div class="hero-logo">
-          <img src="brand/ride-like-a-pro-white.png" width="664" height="1063" alt="Giro d'Italia Ride Like a Pro · Be the Maglia Rosa">
+          <img src="brand/logo-gfmx.png" width="800" height="586" alt="Giro d'Italia Ride Like a Pro Gran Fondo México">
         </div>
       </div>
       <div class="facts">
@@ -266,8 +309,8 @@
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Be the Maglia Rosa</span><b></b><span>28 · 02 · 2027</span><b></b><span>Zócalo · CDMX</span><b></b><span>60 · 120 km</span><b></b><span><span class="nw">GIRO-LAND</span></span><b></b>
-      <span>Be the Maglia Rosa</span><b></b><span>28 · 02 · 2027</span><b></b><span>Zócalo · CDMX</span><b></b><span>60 · 120 km</span><b></b><span><span class="nw">GIRO-LAND</span></span><b></b>
+      <span>Be the Maglia Rosa</span><b></b><span>28 · 02 · 2027</span><b></b><span>Zócalo · CDMX</span><b></b><span>60 · 120 km</span><b></b><span>GIROLAND</span><b></b>
+      <span>Be the Maglia Rosa</span><b></b><span>28 · 02 · 2027</span><b></b><span>Zócalo · CDMX</span><b></b><span>60 · 120 km</span><b></b><span>GIROLAND</span><b></b>
     </div>
   </div>
 
@@ -287,41 +330,64 @@
   </section>
 
   <section id="experiencia" class="dark">
-    <div class="wrap" style="display:flex;flex-direction:column;gap:44px">
+    <div class="wrap" style="display:flex;flex-direction:column;gap:40px">
       <div class="head" data-rv>
         <p class="eyebrow">Por qué estar ahí</p>
-        <h2 class="display">Un día que se queda contigo.</h2>
-        <p class="lead">No es solo cruzar una meta, es la salida en el corazón de la ciudad, la ruta, tu gente y una fiesta rosa al final.</p>
+        <h2 class="display">No es solo una carrera. Es una historia que vas a vivir.</h2>
+        <p class="lead">Una salida memorable, una ruta que te desafía y miles de personas que comparten tu pasión. Vive cada kilómetro, celebra cada logro y descubre lo que significa formar parte del Giro d'Italia Ride Like a Pro México.</p>
       </div>
-      <div class="trio">
-        <a href="#giro-land" data-rv><img src="https://images.unsplash.com/photo-1784123476739-4527223aae15?w=900&q=72&auto=format&fit=crop" alt="Asistentes disfrutando un festival al aire libre" loading="lazy"><em>01</em><span><b>La meta</b><small>Bienvenido a <span class="nw">GIRO-LAND</span></small></span></a>
-        <a href="#ruta" data-rv><img src="img/fb-ruta.jpg" alt="Grupo de ciclistas en carretera junto a una bandera rosa" loading="lazy"><em>02</em><span><b>La ruta</b><small>Recorrido, hidratación y seguridad</small></span></a>
-        <a href="#aficion" data-rv><img src="img/fb-selfie.jpg" alt="Dos ciclistas tomándose una selfie antes de la salida" loading="lazy"><em>03</em><span><b>La afición</b><small>Con amigos, familia y pareja</small></span></a>
+      <div class="story">
+        <a href="#final" data-rv><span class="img"><img src="https://static2.giroditalia.it/wp-content/uploads/2026/05/w2mvngEbTomSIqMl7juM_140526-074756-scaled.jpg" alt="Pelotón del Giro d'Italia cruzando una calle llena de aficionados" loading="lazy"></span><span class="txt"><small>01 · La salida</small><b>Donde comienza la historia.</b><span>Toma la salida desde un escenario emblemático y siente la emoción de compartir los primeros kilómetros con cientos de ciclistas.</span></span></a>
+        <a href="#ruta" data-rv><span class="img"><img src="https://static2.giroditalia.it/wp-content/uploads/2026/05/UhFFwCD2e7Yy3LMFKbqA_290526-081950-2048x1365.jpg" alt="Pelotón del Giro d'Italia en un puerto de montaña" loading="lazy"></span><span class="txt"><small>02 · La ruta</small><b>El desafío que te lleva más lejos.</b><span>Recorre paisajes extraordinarios, supera tus propios límites y disfruta cada kilómetro con seguridad y soporte profesional.</span></span></a>
+        <a href="#aficion" data-rv><span class="img"><img src="https://static2.giroditalia.it/wp-content/uploads/2025/05/j0AoJVEp4yrtJSV9AGIw_210525-082759-1536x1024.jpg" alt="Un niño se toma una selfie con un ciclista del Giro d'Italia" loading="lazy"></span><span class="txt"><small>03 · La comunidad</small><b>La pasión se disfruta mejor juntos.</b><span>Comparte la experiencia con amigos, familia y miles de apasionados que hacen del ciclismo una forma de vida.</span></span></a>
       </div>
+      <p class="photo-credit">Fotos: Giro d'Italia (RCS Sport). Uso de vista previa.</p>
     </div>
   </section>
 
-  <!-- 01 · La meta: GIRO-LAND -->
-  <section id="giro-land" class="dark" style="border-top:1px solid #1d1d1f">
+  <!-- GIROLAND -->
+  <section id="giroland" class="dark" style="border-top:1px solid #1d1d1f">
     <div class="wrap" style="display:flex;flex-direction:column;gap:40px">
       <div class="split">
         <div class="stack" data-rv>
-          <p class="eyebrow">01 · La meta · Zona de hospitalidad</p>
-          <h2 class="display"><span class="nw">GIRO-LAND</span>: aquí empieza la fiesta.</h2>
-          <p class="lead">Al cruzar la meta, los ciclistas y sus acompañantes acceden a <span class="nw">GIRO-LAND</span>, el área recreativa oficial del Giro d'Italia. Este espacio incluye feria gastronómica italiana, música en vivo, zona de exposición de marcas, actividades infantiles y la ceremonia de premiación.</p>
-          <p class="lead">Ven aunque no ruedes: <span class="nw">GIRO-LAND</span> es para ciclistas, familias y aficionados.</p>
+          <p class="eyebrow">GIROLAND</p>
+          <h2 class="display">GIROLAND: aquí comienza la celebración.</h2>
+          <p class="lead">Al cruzar la línea de meta, la experiencia continúa en GIROLAND, el gran festival de Giro d'Italia Ride Like a Pro México.</p>
+          <p class="lead">Un espacio que celebra la cultura italiana y la pasión por el ciclismo, con gastronomía, música en vivo, exposición de grandes marcas, actividades para niños y la ceremonia de premiación.</p>
+          <p class="lead" style="color:#fff">Ven a celebrar, descubrir y compartir. No necesitas subirte a una bicicleta para vivir la experiencia del Giro.</p>
         </div>
-        <figure class="gl-wide" data-rv><img src="https://images.unsplash.com/photo-1784123476739-4527223aae15?w=1400&q=72&auto=format&fit=crop" alt="Asistentes disfrutando un festival al aire libre" loading="lazy"><figcaption><span class="nw">GIRO-LAND</span> · Área recreativa oficial</figcaption></figure>
+        <figure class="gl-wide" data-rv><img src="https://static2.giroditalia.it/wp-content/uploads/2026/05/9QDUpGwDNOweJM0YquWi_310526-094203-1536x1024.jpg" alt="Llegada del Giro d'Italia con el público en las vallas" loading="lazy"><figcaption>GIROLAND · El festival del Giro</figcaption></figure>
       </div>
       <div class="gl-grid">
-        <figure class="gl-tile" data-rv><img src="https://images.unsplash.com/photo-1673971372358-769a28fa4c81?w=700&q=72&auto=format&fit=crop" alt="Plato de pasta italiana en primer plano" loading="lazy"><figcaption><b>Feria gastronómica italiana</b><span>Pasta, pizza y sabores de Italia para recuperar energía.</span></figcaption></figure>
-        <figure class="gl-tile" data-rv><img src="https://images.unsplash.com/photo-1787677357294-291c94813bb4?w=700&q=72&auto=format&fit=crop" alt="Público frente a un escenario con banda en vivo" loading="lazy"><figcaption><b>Música en vivo</b><span>Un escenario para celebrar con los que rodaron y los que vinieron a echarte porras.</span></figcaption></figure>
+        <figure class="gl-tile" data-rv><img src="https://static2.giroditalia.it/wp-content/uploads/2025/05/BCkAPoyiaYNB6KA5R3Uh_160525-065241.jpg" alt="Un ciclista comiendo pizza en la zona de hospitalidad del Giro" loading="lazy"><figcaption><b>Feria gastronómica italiana</b><span>Pasta, pizza y sabores de Italia para recuperar energía.</span></figcaption></figure>
+        <figure class="gl-tile" data-rv><img src="https://static2.giroditalia.it/wp-content/uploads/2025/05/mLLfyKwCx3HtEwGDtxyJ_070525-095132-1536x1024.jpg" alt="Concierto en un escenario del Giro d'Italia con público" loading="lazy"><figcaption><b>Música en vivo</b><span>Un escenario para celebrar con los que rodaron y los que vinieron a echar porras.</span></figcaption></figure>
         <figure class="gl-tile" data-rv><img src="https://images.unsplash.com/photo-1778402566957-c21d77a67d0d?w=700&q=72&auto=format&fit=crop" alt="Asistentes recorriendo stands bajo una gran carpa" loading="lazy"><figcaption><b>Exposición de marcas</b><span>Bicis, equipo, nutrición y la tienda oficial del Giro.</span></figcaption></figure>
         <figure class="gl-tile" data-rv><img src="https://images.unsplash.com/photo-1636717944794-858fe2fea698?w=700&q=72&auto=format&fit=crop" alt="Niños con la cara pintada en un festival" loading="lazy"><figcaption><b>Actividades infantiles</b><span>Para que los más chicos también vivan su primera fiesta rosa.</span></figcaption></figure>
-        <figure class="gl-tile" data-rv><img src="https://images.unsplash.com/photo-1790337613912-29bdb9a722af?w=700&q=72&auto=format&fit=crop" alt="Una persona coloca una medalla a un participante" loading="lazy"><figcaption><b>Ceremonia de premiación</b><span>Medallas, podios y el momento de celebrar a los mejores de cada categoría.</span></figcaption></figure>
-        <figure class="gl-tile" data-rv><img src="img/fb-salida.jpg" alt="Grupo de ciclistas reunidos junto a la carpa de Ride Like a Pro" loading="lazy"><figcaption><b>Piccolo Fondo</b><span>Una rodada recreativa dentro de <span class="nw">GIRO-LAND</span> para disfrutar el ambiente sin presión.</span></figcaption></figure>
+        <figure class="gl-tile" data-rv><img src="https://static2.giroditalia.it/wp-content/uploads/2025/05/DDYw73IvppiXEbxSmM9t_160525-081245-1536x1024.jpg" alt="Ciclistas en el escenario junto al trofeo del Giro d'Italia" loading="lazy"><figcaption><b>Ceremonia de premiación</b><span>Podios, trofeos y el momento de celebrar a los mejores de cada categoría.</span></figcaption></figure>
+        <figure class="gl-tile" data-rv><img src="img/fb-salida.jpg" alt="Grupo de ciclistas reunidos junto a la carpa de Ride Like a Pro" loading="lazy"><figcaption><b>Piccolo Fondo</b><span>Una rodada recreativa dentro de GIROLAND para disfrutar el ambiente sin presión.</span></figcaption></figure>
       </div>
-      <p class="photo-credit">Fotos de referencia: Unsplash (Barney Goodman, Fatemeh Rz, Margo Evardson, Ihnatsi Yfull, Olek Buzunov) y Giro Ride Like a Pro México.</p>
+      <div class="split fest" style="align-items:start">
+        <div class="stack" data-rv>
+          <p class="eyebrow">GIROLAND</p>
+          <h2 class="display">Bienvenidos al festival del Giro.</h2>
+        </div>
+        <div class="stack" data-rv>
+          <p class="lead">La energía del ciclismo toma otra dimensión en GIROLAND. Música, gastronomía, entretenimiento, exhibiciones, marcas, experiencias y actividades para toda la familia.</p>
+          <p class="lead">Un gran punto de encuentro donde el deporte, el lifestyle y la pasión por la bicicleta se convierten en una celebración.</p>
+          <p class="lead" style="color:#fff;font-weight:700">Aquí todos forman parte del Giro.</p>
+        </div>
+      </div>
+      <ul class="pillars">
+        <li data-rv><small>01</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22V3"/><path d="M4 4h14l-2 4 2 4H4"/></svg>The Finish Line</b><span>Cada llegada tiene una historia. Celebra tu desafío y conquista tu momento Giro.</span></li>
+        <li data-rv><small>02</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="15" r="6"/><path d="M8.5 9.5 6 2h4l2 5 2-5h4l-2.5 7.5"/></svg>Finisher Experience</b><span>Tu logro merece ser recordado. Llévate los recuerdos de una experiencia extraordinaria.</span></li>
+        <li data-rv><small>03</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-6 9 6v11H3z"/><path d="M9 20v-6h6v6"/></svg>Brand Village</b><span>Descubre las grandes marcas, la innovación y las últimas tendencias del ciclismo.</span></li>
+        <li data-rv><small>04</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg>Recovery &amp; Wellness</b><span>Recupera energía, hidrátate y disfruta de un espacio dedicado a tu bienestar.</span></li>
+        <li data-rv><small>05</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0z"/><path d="M8 3v4M12 3v4M16 3v4"/></svg>Food &amp; Gastronomy</b><span>Sabores, encuentros y momentos para compartir alrededor de la pasión por el deporte.</span></li>
+        <li data-rv><small>06</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Live Entertainment</b><span>Música, espectáculos y entretenimiento para celebrar la pasión del Giro.</span></li>
+        <li data-rv><small>07</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 21v-2a5 5 0 0 1 10 0v2M14 21v-1.5a3.5 3.5 0 0 1 7 0V21"/></svg>Cycling Community</b><span>Conecta con miles de apasionados por el ciclismo y forma parte de una comunidad extraordinaria.</span></li>
+        <li data-rv><small>08</small><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="6" r="2.5"/><circle cx="17" cy="6" r="2.5"/><circle cx="12" cy="12" r="2"/><path d="M3 21v-6a4 4 0 0 1 8 0M13 21v-6a4 4 0 0 1 8 0M10 21v-3a2 2 0 0 1 4 0v3"/></svg>Family Experience</b><span>Una celebración para compartir con amigos, familia y nuevas generaciones.</span></li>
+      </ul>
+      <p class="photo-credit">Fotos: Giro d'Italia (RCS Sport), Unsplash (Margo Evardson, Ihnatsi Yfull) y Giro Ride Like a Pro México. Uso de vista previa.</p>
     </div>
   </section>
 
@@ -330,8 +396,10 @@
     <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
       <div class="head" data-rv>
         <p class="eyebrow">02 · La ruta</p>
-        <h2 class="display">Del Zócalo a la carretera.</h2>
-        <p class="lead">La salida es en la esquina de 20 de Noviembre y el Zócalo. Aquí publicaremos el recorrido de cada distancia, la altimetría, los puntos de hidratación y el dispositivo de seguridad.</p>
+        <h2 class="display">De la historia a la leyenda.</h2>
+        <p class="kicker-dark">El Giro comienza en el corazón de México.</p>
+        <p class="lead">Desde el corazón de la Ciudad de México comienza un recorrido diseñado para desafiar tus límites. Una salida emblemática, kilómetros de paisajes extraordinarios y el espíritu del Giro d'Italia acompañándote en cada pedalada.</p>
+        <p class="lead">Descubre los recorridos, conquista cada ascenso y prepárate para vivir una experiencia que va mucho más allá del ciclismo.</p>
         <span class="chip" style="align-self:flex-start">Datos de ruta en validación</span>
       </div>
       <div data-rv>
@@ -374,19 +442,19 @@
   <section id="aficion" style="background:var(--soft)">
     <div class="wrap" style="display:flex;flex-direction:column;gap:36px">
       <div class="head" data-rv>
-        <p class="eyebrow">03 · La afición</p>
-        <h2 class="display">Se rueda mejor acompañado.</h2>
-        <p class="lead">El Giro se vive con tu gente. Ruedan juntos, se esperan en la meta o se ponen la camiseta para echar porras desde la banqueta.</p>
+        <p class="eyebrow">03 · The Giro Community</p>
+        <h2 class="display">El Giro se vive mejor cuando se comparte.</h2>
+        <p class="lead">Hay experiencias que se disfrutan más cuando se viven juntos. Reúne a tu equipo, comparte la ruta, anima desde la meta y celebra cada momento. Porque el Giro d'Italia Ride Like a Pro México es mucho más que una carrera: es una pasión que nos conecta.</p>
       </div>
       <div class="crew">
-        <article data-rv><img src="img/fb-amigos.jpg" alt="Dos amigos celebrando en el evento" loading="lazy"><div><h3>Con tus amigos</h3><p>Armen su grupo, entrenen juntos y celebren cada kilómetro. Las mejores historias del día se cuentan en grupo.</p></div></article>
-        <article data-rv><img src="https://images.unsplash.com/photo-1791714837074-0eb6e74493ba?w=900&q=70&auto=format&fit=crop" alt="Familia rodando por la ciudad con dos niños" loading="lazy"><div><h3>En familia</h3><p>Que te vean salir del Zócalo y te reciban en <span class="nw">GIRO-LAND</span>. Un domingo que se vuelve tradición.</p></div></article>
-        <article data-rv><img src="https://images.unsplash.com/photo-1776858205706-ce6680cb0bdb?w=900&q=70&auto=format&fit=crop" alt="Niña en hombros de su papá animando en un evento" loading="lazy"><div><h3>Con los peques</h3><p>Las actividades infantiles de <span class="nw">GIRO-LAND</span> están pensadas para que los más chicos vivan su primera fiesta rosa.</p></div></article>
-        <article data-rv><img src="img/fb-selfie.jpg" alt="Dos ciclistas sonriendo en una selfie" loading="lazy"><div><h3>En pareja</h3><p>Entrenar juntos, rodar juntos y cruzar la meta juntos. Pocas citas se recuerdan tanto.</p></div></article>
+        <article data-rv><img src="img/fb-amigos.jpg" alt="Dos amigos celebrando en el evento" loading="lazy"><div><small>01 · Your cycling crew</small><h3>La pasión se comparte.</h3><p>Reúne a tus amigos, prepara el desafío y escribe una historia que comienza en la línea de salida y se celebra juntos en la meta.</p></div></article>
+        <article data-rv><img src="https://images.unsplash.com/photo-1791714837074-0eb6e74493ba?w=900&q=70&auto=format&fit=crop" alt="Familia rodando por la ciudad con dos niños" loading="lazy"><div><small>02 · Family experience</small><h3>El Giro también es para ellos.</h3><p>Comparte la emoción con quienes siempre están contigo. Una experiencia para disfrutar en familia, dentro y fuera de la ruta.</p></div></article>
+        <article data-rv><img src="https://images.unsplash.com/photo-1776858205706-ce6680cb0bdb?w=900&q=70&auto=format&fit=crop" alt="Niña en hombros de su papá animando en un evento" loading="lazy"><div><small>03 · Next generation</small><h3>La próxima generación del ciclismo.</h3><p>Acerca a los más jóvenes al mundo de la bicicleta y comparte con ellos la emoción, los valores y la pasión del deporte.</p></div></article>
+        <article data-rv><img src="img/fb-selfie.jpg" alt="Dos ciclistas sonriendo en una selfie" loading="lazy"><div><small>04 · Share the experience</small><h3>Los grandes momentos se viven juntos.</h3><p>Conquista nuevos retos, acompaña a quien quieres y celebra cada kilómetro de esta experiencia.</p></div></article>
       </div>
       <div class="cheer" data-rv>
         <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
-        <p><b>¿No vas a rodar?</b> Ven a la salida en 20 de Noviembre y Zócalo, ponte algo rosa y acompaña a tu ciclista hasta <span class="nw">GIRO-LAND</span>.</p>
+        <p><b>No necesitas competir para vivir el Giro.</b> Ven a disfrutar la emoción de la salida, anima a los ciclistas y celebra con ellos en GIROLAND. La pasión por el ciclismo también se vive desde afuera de la bicicleta.</p>
       </div>
       <p class="photo-credit">Fotos: Giro Ride Like a Pro México y Unsplash (Elena Makarevich, Brett Wharton). Uso de vista previa.</p>
     </div>
@@ -395,14 +463,35 @@
   <section id="distancias">
     <div class="wrap" style="display:flex;flex-direction:column;gap:44px">
       <div class="head" data-rv>
-        <p class="eyebrow">Distancias</p>
-        <h2 class="display">Elige el reto que te prende.</h2>
-        <p class="lead">Dos distancias, una misma salida y la misma fiesta en <span class="nw">GIRO-LAND</span>.</p>
+        <p class="eyebrow">Choose your challenge</p>
+        <h2 class="display">Dos distancias. Un mismo espíritu. Un solo Giro.</h2>
+        <p class="lead">Dos maneras de vivir el Giro d'Italia Ride Like a Pro México. Elige tu desafío, conquista la ruta y descubre hasta dónde puedes llegar.</p>
       </div>
-      <div class="dist">
-        <article data-rv><h3>Medio<br>Fondo</h3><span class="km"><span data-count="60">60</span><small>km</small></span><span class="bar"><i data-w="50%"></i></span><span class="tag">Para ir por más</span><p>Para quien ya rueda constante y quiere ponerse a prueba.</p><a href="https://www.entusmarcas.com/" target="_blank" rel="noopener">Inscribirme al Medio Fondo</a></article>
-        <article data-rv><h3>Gran<br>Fondo</h3><span class="km"><span data-count="120">120</span><small>km</small></span><span class="bar"><i data-w="100%"></i></span><span class="tag">La experiencia completa</span><p>Para ciclistas con fondo que quieren rodar como pro de principio a fin.</p><a href="https://www.entusmarcas.com/" target="_blank" rel="noopener">Inscribirme al Gran Fondo</a></article>
+      <div class="dist2">
+        <article data-rv>
+          <div class="ph"><img src="https://static2.giroditalia.it/wp-content/uploads/2026/05/dONJd1xub9ebjfkOP1w8_080526-070336-1536x1024.jpg" alt="Pelotón del Giro d'Italia entre árboles en flor" loading="lazy"></div>
+          <div class="body">
+            <div class="top"><small>01 · Medio Fondo</small><span class="pill">60 KM</span></div>
+            <h3>El reto de superarte.</h3>
+            <span class="km"><span data-count="60">60</span> KM</span>
+            <p>Una distancia para disfrutar cada kilómetro, poner a prueba tu resistencia y descubrir de lo que eres capaz. El equilibrio perfecto entre desafío, estrategia y pasión por el ciclismo.</p>
+            <dl><div><dt>Distancia</dt><dd>60 kilómetros</dd></div><div><dt>Desafío</dt><dd>Resistencia</dd></div><div><dt>Salida</dt><dd>Zócalo, CDMX</dd></div></dl>
+            <a class="discover" href="#ruta" data-tab="0">Descubre el Medio Fondo</a>
+          </div>
+        </article>
+        <article data-rv>
+          <div class="ph"><img src="https://static2.giroditalia.it/wp-content/uploads/2026/05/K0kQsjfC6zFg41zCYg72_260526-073603-scaled.jpg" alt="Carretera del Giro d'Italia en un valle de montaña" loading="lazy"></div>
+          <div class="body">
+            <div class="top"><small>02 · Gran Fondo</small><span class="pill">120 KM</span></div>
+            <h3>El desafío definitivo.</h3>
+            <span class="km"><span data-count="120">120</span> KM</span>
+            <p>Para quienes buscan llevar su resistencia al límite. Una experiencia de fondo que exige preparación, determinación y carácter. Cada ascenso y cada kilómetro forman parte de tu propia historia.</p>
+            <dl><div><dt>Distancia</dt><dd>120 kilómetros</dd></div><div><dt>Desafío</dt><dd>Alta exigencia</dd></div><div><dt>Salida</dt><dd>Zócalo, CDMX</dd></div></dl>
+            <a class="discover" href="#ruta" data-tab="1">Descubre el Gran Fondo</a>
+          </div>
+        </article>
       </div>
+      <p class="photo-credit">Fotos: Giro d'Italia (RCS Sport). Uso de vista previa.</p>
     </div>
   </section>
 
@@ -411,21 +500,14 @@
       <div class="head" data-rv>
         <p class="eyebrow">Race kit oficial</p>
         <h2 class="display">Llévate algo más que kilómetros.</h2>
-        <p class="lead">El jersey oficial y los accesorios de la edición mexicana de Ride Like a Pro. Da clic en cada imagen para ver el detalle.</p>
+        <p class="lead">Jersey oficial, musette, gorra, ánfora, calcetas y cuello multiusos de la edición mexicana de Ride Like a Pro.</p>
       </div>
-      <div class="goods">
-        <figure class="feat" data-rv><a class="ph" href="img/kit/jersey.jpg" target="_blank" rel="noopener" aria-label="Ver Jersey oficial en grande"><img src="img/kit/jersey.jpg" alt="Jersey oficial rosa con diseño topográfico, vista frontal, trasera y detalles" loading="lazy"></a><figcaption><b>Jersey oficial</b><span>Concepto topográfico inspirado en la ruta</span></figcaption></figure>
-        <figure class="" data-rv><a class="ph" href="img/kit/musette.jpg" target="_blank" rel="noopener" aria-label="Ver Musette en grande"><img src="img/kit/musette.jpg" alt="Musette rosa con logo Ride Like a Pro y detalles" loading="lazy"></a><figcaption><b>Musette</b><span>Bolsa de avituallamiento con correa ajustable</span></figcaption></figure>
-        <figure class="" data-rv><a class="ph" href="img/kit/gorra.jpg" target="_blank" rel="noopener" aria-label="Ver Gorra de ciclismo en grande"><img src="img/kit/gorra.jpg" alt="Gorra de ciclismo blanca con visera rosa y diseño topográfico" loading="lazy"></a><figcaption><b>Gorra de ciclismo</b><span>Visera rosa y detalle tricolor</span></figcaption></figure>
-        <figure class="" data-rv><a class="ph" href="img/kit/calcetas.jpg" target="_blank" rel="noopener" aria-label="Ver Calcetas en grande"><img src="img/kit/calcetas.jpg" alt="Calcetas blancas con puño rosa y logo Ride Like a Pro" loading="lazy"></a><figcaption><b>Calcetas</b><span>Puño rosa con franja tricolor</span></figcaption></figure>
-        <figure class="" data-rv><a class="ph" href="img/kit/cuello.jpg" target="_blank" rel="noopener" aria-label="Ver Cuello multiusos en grande"><img src="img/kit/cuello.jpg" alt="Cuello multiusos en versión rosa y blanca" loading="lazy"></a><figcaption><b>Cuello multiusos</b><span>En rosa y en blanco</span></figcaption></figure>
-        <figure class="duo" data-rv><div class="ph"><a href="img/kit/anfora-rosa.jpg" target="_blank" rel="noopener" aria-label="Ver ánfora rosa en grande"><img src="img/kit/anfora-rosa.jpg" alt="Ánfora rosa con logo Ride Like a Pro" loading="lazy"></a><a href="img/kit/anfora-blanca.jpg" target="_blank" rel="noopener" aria-label="Ver ánfora blanca en grande"><img src="img/kit/anfora-blanca.jpg" alt="Ánfora blanca con logo Ride Like a Pro" loading="lazy"></a></div><figcaption><b>Ánforas</b><span>En rosa y en blanco</span></figcaption></figure>
-      </div>
+      <figure class="kit-hero" data-rv><a href="img/kit/race-kit-oficial.jpg" target="_blank" rel="noopener" aria-label="Ver el race kit oficial en grande"><img src="img/kit/race-kit-oficial.jpg" width="2182" height="1228" alt="Race kit oficial: musette, gorra, jersey, ánfora, calcetas y cuello de Giro d'Italia Ride Like a Pro Gran Fondo México" loading="lazy"></a></figure>
       <ul class="incl">
         <li data-rv><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Número y chip de cronometraje</li>
         <li data-rv><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Medalla finisher</li>
         <li data-rv><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Hidratación y apoyo en ruta</li>
-        <li data-rv><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Acceso a <span class="nw">GIRO-LAND</span></li>
+        <li data-rv><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e83069" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Acceso a GIROLAND</li>
       </ul>
     </div>
   </section>
@@ -474,10 +556,10 @@
       </div>
       <div class="list">
         <details data-rv><summary>¿Cuándo y dónde es la salida?<span class="sign" aria-hidden="true"></span></summary><p>El domingo 28 de febrero de 2027, en la esquina de la avenida 20 de Noviembre y el Zócalo, Centro Histórico de la Ciudad de México. La estación de Metro más cercana es Zócalo/Tenochtitlan (Línea 2). Los horarios de salida por distancia se publicarán con la ruta.</p></details>
-        <details data-rv><summary>¿Qué nivel necesito?<span class="sign" aria-hidden="true"></span></summary><p>Hay dos distancias: Medio Fondo de 60 km para ir por más y Gran Fondo de 120 km para la experiencia completa. Si buscas algo recreativo, el Piccolo Fondo se vive dentro de <span class="nw">GIRO-LAND</span>.</p></details>
+        <details data-rv><summary>¿Qué nivel necesito?<span class="sign" aria-hidden="true"></span></summary><p>Hay dos distancias: Medio Fondo de 60 km para ir por más y Gran Fondo de 120 km para la experiencia completa. Si buscas algo recreativo, el Piccolo Fondo se vive dentro de GIROLAND.</p></details>
         <details data-rv><summary>¿Cuándo conoceré la ruta completa?<span class="sign" aria-hidden="true"></span></summary><p>La ruta, la altimetría y los puntos de hidratación se publicarán en la sección La ruta y se compartirán directamente con las personas registradas.</p></details>
-        <details data-rv><summary>¿Qué es <span class="nw">GIRO-LAND</span>?<span class="sign" aria-hidden="true"></span></summary><p>Es la zona de hospitalidad. Al cruzar la meta, los ciclistas y acompañantes acceden al área recreativa oficial del Giro d'Italia, con feria gastronómica italiana, música en vivo, zona de exposición de marcas, actividades infantiles y la ceremonia de premiación.</p></details>
-        <details data-rv><summary>¿Qué incluye mi kit?<span class="sign" aria-hidden="true"></span></summary><p>El race kit oficial incluye jersey, musette, gorra de ciclismo, calcetas, cuello multiusos y ánfora, además de número con chip de cronometraje, medalla finisher, hidratación y apoyo en ruta, y acceso a <span class="nw">GIRO-LAND</span>.</p></details>
+        <details data-rv><summary>¿Qué es GIROLAND?<span class="sign" aria-hidden="true"></span></summary><p>Es la zona de hospitalidad. Al cruzar la meta, los ciclistas y acompañantes acceden al área recreativa oficial del Giro d'Italia, con feria gastronómica italiana, música en vivo, zona de exposición de marcas, actividades infantiles y la ceremonia de premiación.</p></details>
+        <details data-rv><summary>¿Qué incluye mi kit?<span class="sign" aria-hidden="true"></span></summary><p>El race kit oficial incluye jersey, musette, gorra de ciclismo, calcetas, cuello multiusos y ánfora, además de número con chip de cronometraje, medalla finisher, hidratación y apoyo en ruta, y acceso a GIROLAND.</p></details>
         <details data-rv><summary>¿Dónde recojo mi kit?<span class="sign" aria-hidden="true"></span></summary><p>Te enviaremos los detalles de entrega de kit cuando se acerque la fecha.</p></details>
         <details data-rv><summary>¿Puedo registrar a mi club o equipo?<span class="sign" aria-hidden="true"></span></summary><p>Sí. Escríbenos a clubes@giro-mexico.com con el nombre del club, el capitán y el número estimado de ciclistas, y te ayudamos a organizar a tu equipo.</p></details>
         <details data-rv><summary>¿Y si soy menor de edad?<span class="sign" aria-hidden="true"></span></summary><p>El registro requiere confirmar mayoría de edad. Si necesitas información para un menor, escríbenos a participantes@giro-mexico.com.</p></details>
@@ -486,7 +568,7 @@
     </div>
   </section>
 
-  <section class="final dark">
+  <section id="final" class="final dark">
     <div class="final-bg" id="finalBg" role="img" aria-label="El Zócalo de la Ciudad de México con la bandera monumental y la Catedral"></div>
     <div class="wrap">
       <p class="eyebrow" data-rv>Te esperamos en el Zócalo</p>
@@ -507,7 +589,7 @@
 
 <footer class="site">
   <div class="wrap">
-    <div class="flogo"><img src="brand/ride-like-a-pro-white.png" width="664" height="1063" alt="Giro d'Italia Ride Like a Pro"><p style="margin:12px 0 0">28 de febrero de 2027 · Zócalo, CDMX</p></div>
+    <div class="flogo"><img src="brand/logo-gfmx-sm.png" width="440" height="322" alt="Giro d'Italia Ride Like a Pro Gran Fondo México"><p style="margin:12px 0 0">28 de febrero de 2027 · Zócalo, CDMX</p></div>
     <div><h3>El evento</h3><ul><li><a href="index.html#experiencia">La experiencia</a></li><li><a href="index.html#distancias">Distancias</a></li><li><a href="https://www.entusmarcas.com/" target="_blank" rel="noopener">Inscripciones</a></li><li><a href="index.html#dudas">Preguntas frecuentes</a></li></ul></div>
     <div><h3>El Giro</h3><ul><li><a href="historia.html">Historia</a></li><li><a href="gaceta.html">La Gazzetta</a></li><li><a href="https://www.giroditalia.it/es/" target="_blank" rel="noopener">giroditalia.it</a></li></ul></div>
     <div><h3>Contacto</h3><ul><li><a href="mailto:participantes@giro-mexico.com">participantes@giro-mexico.com</a></li><li><a href="mailto:clubes@giro-mexico.com">clubes@giro-mexico.com</a></li><li><a href="https://www.facebook.com/profile.php?id=100078062513721" target="_blank" rel="noopener">Facebook</a></li></ul></div>
@@ -529,6 +611,9 @@
       });
     });
   })();
+  document.querySelectorAll('.discover[data-tab]').forEach(function (a) {
+    a.addEventListener('click', function () { var t = document.querySelectorAll('.tabs [role="tab"]')[+a.getAttribute('data-tab')]; if (t) t.click(); });
+  });
   // Avance de La Gazzetta (3 notas más recientes)
   gacetaCargar(function (list) {
     var box = document.getElementById('newsTeaser');
