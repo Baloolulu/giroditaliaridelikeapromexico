@@ -15,10 +15,10 @@
     });
   }
 
-  // Cuenta regresiva al 28 de febrero de 2027 (hora de CDMX)
+  // Cuenta regresiva al 25 de abril de 2027 (hora de CDMX)
   var el = document.getElementById('cuenta');
   if (el) {
-    var evento = new Date('2027-02-28T00:00:00-06:00').getTime();
+    var evento = new Date('2027-04-25T00:00:00-06:00').getTime();
     var pad = function (n) { return (n < 10 ? '0' : '') + n; };
     var tick = function () {
       var s = Math.floor((evento - Date.now()) / 1000);
